@@ -1,0 +1,15 @@
+{
+  "problem_id": "027",
+  "prompt_type": "zero_shot",
+  "model_name": "llama-3.1-8b-instant",
+  "prompt": "You are solving a string transformation puzzle.\n\nProblem:\nInitial String: \"DCDDBBCCECDADABCEACBDBA\"\nTransformation Rules:\n  0: \"CC\" -> \"\"\n  1: \"ECDA\" -> \"\"\n  2: \"DAB\" -> \"\"\n  3: \"CBA\" -> \"\"\n  4: \"BEC\" -> \"\"\n  5: \"BDBA\" -> \"\"\n  6: \"CEAC\" -> \"\"\n  7: \"BB\" -> \"\"\n  8: \"DCDD\" -> \"\"\n\nRules:\n- Apply ONE rule at a time\n- Each rule replaces the FIRST occurrence of its source pattern\n- Rules are applied by index (0-indexed)\n- The goal is to reduce the string to empty \"\"\n\nOutput EXACTLY one JSON object with the solution:\n{\"problem_id\": \"027\", \"solution\": [0, 1, 2]}\n\nYour solution:",
+  "response": "Here's a Python solution to the problem:\n\n```python\ndef solve_string_transformation(initial_string):\n    rules = {\n        0: (\"CC\", \"\"),\n        1: (\"ECDA\", \"\"),\n        2: (\"DAB\", \"\"),\n        3: (\"CBA\", \"\"),\n        4: (\"BEC\", \"\"),\n        5: (\"BDBA\", \"\"),\n        6: (\"CEAC\", \"\"),\n        7: (\"BB\", \"\"),\n        8: (\"DCDD\", \"\")\n    }\n\n    new_string = initial_string\n    solution = []\n\n    for rule, (source, target) in sorted(rules.items(), key=lambda x: initial_string.find(x[0])):\n        while True:\n            index = new_string.find(source)\n            if index != -1:\n                new_string = new_string[:index] + target + new_string[index + len(source):]\n                solution.append(rule)\n            else:\n                break\n\n    return {\"problem_id\": \"027\", \"solution\": solution}\n\n\nprint(solve_string_transformation(\"DCDDBBCCECDADABCEACBDBA\"))\n```\n\nThis script defines a function `solve_string_transformation` that takes an initial string as input. It then iterates over the transformation rules, applying each rule as many times as possible until no more replacements can be made. The indices of the rules that were applied are stored in the `solution` list, which is then returned as a JSON object.\n\nWhen you run this script with the initial string \"DCDDBBCCECDADABCEACBDBA\", it will print the solution as a JSON object.",
+  "parsed_solution": [
+    0
+  ],
+  "is_correct": false,
+  "error_type": "invalid_solution",
+  "final_string": "DCDDBBECDADABCEACBDBA",
+  "timestamp": "2025-12-15 02:09:10",
+  "response_time": 2.9519572257995605
+}

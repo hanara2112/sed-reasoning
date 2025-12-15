@@ -1,0 +1,14 @@
+{
+  "problem_id": "073",
+  "initial_string": "IBAKYEFXORW",
+  "transitions": [
+    {
+      "src": "IBAKYE",
+      "tgt": ""
+    },
+    {
+      "src": "FXORW",
+      "tgt": ""
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "problem_id": "026",
+  "initial_string": "ADCDBDCCADACDEDBEDBAD",
+  "transitions": [
+    {
+      "src": "CDE",
+      "tgt": ""
+    },
+    {
+      "src": "ABD",
+      "tgt": ""
+    },
+    {
+      "src": "DBED",
+      "tgt": ""
+    },
+    {
+      "src": "CD",
+      "tgt": ""
+    },
+    {
+      "src": "ADA",
+      "tgt": ""
+    },
+    {
+      "src": "DEA",
+      "tgt": ""
+    },
+    {
+      "src": "BAD",
+      "tgt": ""
+    },
+    {
+      "src": "BDCC",
+      "tgt": ""
+    },
+    {
+      "src": "AD",
+      "tgt": ""
+    }
+  ]
+}

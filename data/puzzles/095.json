@@ -1,0 +1,42 @@
+{
+  "problem_id": "095",
+  "initial_string": "ACCBDBAABDEBBDACCBC",
+  "transitions": [
+    {
+      "src": "ACC",
+      "tgt": ""
+    },
+    {
+      "src": "BD",
+      "tgt": ""
+    },
+    {
+      "src": "DA",
+      "tgt": ""
+    },
+    {
+      "src": "BB",
+      "tgt": ""
+    },
+    {
+      "src": "ABDE",
+      "tgt": ""
+    },
+    {
+      "src": "DAA",
+      "tgt": ""
+    },
+    {
+      "src": "BED",
+      "tgt": ""
+    },
+    {
+      "src": "BA",
+      "tgt": ""
+    },
+    {
+      "src": "CCBC",
+      "tgt": ""
+    }
+  ]
+}

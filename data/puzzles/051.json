@@ -1,0 +1,26 @@
+{
+  "problem_id": "051",
+  "initial_string": "EACBCDEAD",
+  "transitions": [
+    {
+      "src": "CBB",
+      "tgt": ""
+    },
+    {
+      "src": "DEAD",
+      "tgt": ""
+    },
+    {
+      "src": "EA",
+      "tgt": ""
+    },
+    {
+      "src": "ABC",
+      "tgt": ""
+    },
+    {
+      "src": "CBC",
+      "tgt": ""
+    }
+  ]
+}

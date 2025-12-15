@@ -1,0 +1,26 @@
+{
+  "problem_id": "053",
+  "initial_string": "ECBEDBAC",
+  "transitions": [
+    {
+      "src": "CDA",
+      "tgt": ""
+    },
+    {
+      "src": "EDB",
+      "tgt": ""
+    },
+    {
+      "src": "ECB",
+      "tgt": ""
+    },
+    {
+      "src": "EDD",
+      "tgt": ""
+    },
+    {
+      "src": "AC",
+      "tgt": ""
+    }
+  ]
+}

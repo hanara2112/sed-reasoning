@@ -1,0 +1,14 @@
+{
+  "problem_id": "076",
+  "initial_string": "BEXNQXCP",
+  "transitions": [
+    {
+      "src": "BEXNQ",
+      "tgt": ""
+    },
+    {
+      "src": "XCP",
+      "tgt": ""
+    }
+  ]
+}

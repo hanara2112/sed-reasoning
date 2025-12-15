@@ -1,0 +1,13 @@
+{
+  "problem_id": "094",
+  "prompt_type": "zero_shot",
+  "model_name": "compound-beta",
+  "prompt": "You are solving a string transformation puzzle.\n\nProblem:\nInitial String: \"CDAABABDEBDCBADDEABEEBB\"\nTransformation Rules:\n  0: \"CD\" -> \"\"\n  1: \"DCB\" -> \"\"\n  2: \"EAB\" -> \"\"\n  3: \"ADD\" -> \"\"\n  4: \"BBE\" -> \"\"\n  5: \"BDEB\" -> \"\"\n  6: \"EEBB\" -> \"\"\n  7: \"AABA\" -> \"\"\n  8: \"BED\" -> \"\"\n\nRules:\n- Apply ONE rule at a time\n- Each rule replaces the FIRST occurrence of its source pattern\n- Rules are applied by index (0-indexed)\n- The goal is to reduce the string to empty \"\"\n\nOutput EXACTLY one JSON object with the solution:\n{\"problem_id\": \"094\", \"solution\": [0, 1, 2]}\n\nYour solution:",
+  "response": "",
+  "parsed_solution": null,
+  "is_correct": false,
+  "error_type": "api_error",
+  "final_string": null,
+  "timestamp": "2025-12-15 02:43:41",
+  "response_time": 642.0007150173187
+}

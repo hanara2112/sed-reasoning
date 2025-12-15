@@ -1,0 +1,42 @@
+{
+  "problem_id": "012",
+  "initial_string": "DAEEEBCCDEBECAEDACACEC",
+  "transitions": [
+    {
+      "src": "AE",
+      "tgt": ""
+    },
+    {
+      "src": "BEC",
+      "tgt": ""
+    },
+    {
+      "src": "DAC",
+      "tgt": ""
+    },
+    {
+      "src": "EBC",
+      "tgt": ""
+    },
+    {
+      "src": "DCE",
+      "tgt": ""
+    },
+    {
+      "src": "BBD",
+      "tgt": ""
+    },
+    {
+      "src": "DAEE",
+      "tgt": ""
+    },
+    {
+      "src": "CDE",
+      "tgt": ""
+    },
+    {
+      "src": "ACEC",
+      "tgt": ""
+    }
+  ]
+}

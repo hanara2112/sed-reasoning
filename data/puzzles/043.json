@@ -1,0 +1,22 @@
+{
+  "problem_id": "043",
+  "initial_string": "AAECEDDCBB",
+  "transitions": [
+    {
+      "src": "ECED",
+      "tgt": ""
+    },
+    {
+      "src": "AA",
+      "tgt": ""
+    },
+    {
+      "src": "DCBB",
+      "tgt": ""
+    },
+    {
+      "src": "DEA",
+      "tgt": ""
+    }
+  ]
+}

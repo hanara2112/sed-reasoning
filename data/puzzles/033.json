@@ -1,0 +1,42 @@
+{
+  "problem_id": "033",
+  "initial_string": "CADBDCABDDECDDBEAAD",
+  "transitions": [
+    {
+      "src": "DBD",
+      "tgt": ""
+    },
+    {
+      "src": "AD",
+      "tgt": ""
+    },
+    {
+      "src": "BDDE",
+      "tgt": ""
+    },
+    {
+      "src": "CA",
+      "tgt": ""
+    },
+    {
+      "src": "CDDB",
+      "tgt": ""
+    },
+    {
+      "src": "AAE",
+      "tgt": ""
+    },
+    {
+      "src": "CA",
+      "tgt": ""
+    },
+    {
+      "src": "DDD",
+      "tgt": ""
+    },
+    {
+      "src": "EA",
+      "tgt": ""
+    }
+  ]
+}

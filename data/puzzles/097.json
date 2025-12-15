@@ -1,0 +1,42 @@
+{
+  "problem_id": "097",
+  "initial_string": "ACEBECEADEEDBCBABDDEB",
+  "transitions": [
+    {
+      "src": "DEED",
+      "tgt": ""
+    },
+    {
+      "src": "BCB",
+      "tgt": ""
+    },
+    {
+      "src": "EA",
+      "tgt": ""
+    },
+    {
+      "src": "BEB",
+      "tgt": ""
+    },
+    {
+      "src": "ACE",
+      "tgt": ""
+    },
+    {
+      "src": "EBD",
+      "tgt": ""
+    },
+    {
+      "src": "DEB",
+      "tgt": ""
+    },
+    {
+      "src": "ABD",
+      "tgt": ""
+    },
+    {
+      "src": "BEC",
+      "tgt": ""
+    }
+  ]
+}

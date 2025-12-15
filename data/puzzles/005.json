@@ -1,0 +1,34 @@
+{
+  "problem_id": "005",
+  "initial_string": "CEBADDCAAECCCBDE",
+  "transitions": [
+    {
+      "src": "DBC",
+      "tgt": ""
+    },
+    {
+      "src": "BBD",
+      "tgt": ""
+    },
+    {
+      "src": "CBDE",
+      "tgt": ""
+    },
+    {
+      "src": "ADDC",
+      "tgt": ""
+    },
+    {
+      "src": "CC",
+      "tgt": ""
+    },
+    {
+      "src": "CEB",
+      "tgt": ""
+    },
+    {
+      "src": "AAE",
+      "tgt": ""
+    }
+  ]
+}

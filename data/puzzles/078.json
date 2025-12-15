@@ -1,0 +1,14 @@
+{
+  "problem_id": "078",
+  "initial_string": "CXQMNOK",
+  "transitions": [
+    {
+      "src": "MNOK",
+      "tgt": ""
+    },
+    {
+      "src": "CXQ",
+      "tgt": ""
+    }
+  ]
+}

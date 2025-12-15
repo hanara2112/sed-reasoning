@@ -1,0 +1,42 @@
+{
+  "problem_id": "024",
+  "initial_string": "BABBBBBCAADCAEEEBDCCD",
+  "transitions": [
+    {
+      "src": "AA",
+      "tgt": ""
+    },
+    {
+      "src": "EEBD",
+      "tgt": ""
+    },
+    {
+      "src": "BABB",
+      "tgt": ""
+    },
+    {
+      "src": "CCD",
+      "tgt": ""
+    },
+    {
+      "src": "DEA",
+      "tgt": ""
+    },
+    {
+      "src": "BB",
+      "tgt": ""
+    },
+    {
+      "src": "DCAE",
+      "tgt": ""
+    },
+    {
+      "src": "BC",
+      "tgt": ""
+    },
+    {
+      "src": "ADD",
+      "tgt": ""
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+# Secrets
+*.env
+api_keys.env
+.env
+.env.*
+
+/sed-reasoning/api_keys.env

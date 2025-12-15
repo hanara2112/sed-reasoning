@@ -1,0 +1,22 @@
+{
+  "problem_id": "054",
+  "initial_string": "CDBBDEABEB",
+  "transitions": [
+    {
+      "src": "CDB",
+      "tgt": ""
+    },
+    {
+      "src": "BDE",
+      "tgt": ""
+    },
+    {
+      "src": "EDC",
+      "tgt": ""
+    },
+    {
+      "src": "ABEB",
+      "tgt": ""
+    }
+  ]
+}

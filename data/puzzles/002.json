@@ -1,0 +1,34 @@
+{
+  "problem_id": "002",
+  "initial_string": "DABDACDCEEA",
+  "transitions": [
+    {
+      "src": "BD",
+      "tgt": ""
+    },
+    {
+      "src": "DA",
+      "tgt": ""
+    },
+    {
+      "src": "DCB",
+      "tgt": ""
+    },
+    {
+      "src": "AC",
+      "tgt": ""
+    },
+    {
+      "src": "EEA",
+      "tgt": ""
+    },
+    {
+      "src": "BAA",
+      "tgt": ""
+    },
+    {
+      "src": "DC",
+      "tgt": ""
+    }
+  ]
+}

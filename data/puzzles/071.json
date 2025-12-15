@@ -1,0 +1,14 @@
+{
+  "problem_id": "071",
+  "initial_string": "QTARWUWR",
+  "transitions": [
+    {
+      "src": "QTAR",
+      "tgt": ""
+    },
+    {
+      "src": "WUWR",
+      "tgt": ""
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+# LLM Evaluation Dependencies
+
+# Core dependencies
+pandas>=2.0.0
+numpy>=1.24.0
+tqdm>=4.65.0
+python-dotenv>=1.0.0
+requests>=2.31.0  # For Hugging Face router API
+
+# LLM API clients
+google-generativeai>=0.3.0  # Gemini
+openai>=1.0.0  # GPT models (optional)
+anthropic>=0.18.0  # Claude models (optional)
+huggingface_hub>=0.20.0  # Hugging Face models (optional)
+
+# Visualization (for notebooks)
+matplotlib>=3.7.0
+seaborn>=0.12.0
+jupyter>=1.0.0
+ipykernel>=6.25.0
+

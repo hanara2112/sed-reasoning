@@ -1,0 +1,42 @@
+{
+  "problem_id": "040",
+  "initial_string": "BDAACDDDCCBADBDBEAEA",
+  "transitions": [
+    {
+      "src": "ADC",
+      "tgt": ""
+    },
+    {
+      "src": "BA",
+      "tgt": ""
+    },
+    {
+      "src": "AAD",
+      "tgt": ""
+    },
+    {
+      "src": "DDCC",
+      "tgt": ""
+    },
+    {
+      "src": "DB",
+      "tgt": ""
+    },
+    {
+      "src": "ACD",
+      "tgt": ""
+    },
+    {
+      "src": "BDA",
+      "tgt": ""
+    },
+    {
+      "src": "EA",
+      "tgt": ""
+    },
+    {
+      "src": "DBEA",
+      "tgt": ""
+    }
+  ]
+}

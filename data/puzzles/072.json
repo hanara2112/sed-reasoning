@@ -1,0 +1,14 @@
+{
+  "problem_id": "072",
+  "initial_string": "LNNOXBBMX",
+  "transitions": [
+    {
+      "src": "LNNOXB",
+      "tgt": ""
+    },
+    {
+      "src": "BMX",
+      "tgt": ""
+    }
+  ]
+}

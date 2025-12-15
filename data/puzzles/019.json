@@ -1,0 +1,42 @@
+{
+  "problem_id": "019",
+  "initial_string": "DBEECDBCDDEACEADCDCEE",
+  "transitions": [
+    {
+      "src": "EE",
+      "tgt": ""
+    },
+    {
+      "src": "DCEE",
+      "tgt": ""
+    },
+    {
+      "src": "EADC",
+      "tgt": ""
+    },
+    {
+      "src": "CDDE",
+      "tgt": ""
+    },
+    {
+      "src": "CBA",
+      "tgt": ""
+    },
+    {
+      "src": "AC",
+      "tgt": ""
+    },
+    {
+      "src": "CEB",
+      "tgt": ""
+    },
+    {
+      "src": "DB",
+      "tgt": ""
+    },
+    {
+      "src": "CDB",
+      "tgt": ""
+    }
+  ]
+}

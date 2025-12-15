@@ -1,0 +1,15 @@
+{
+  "problem_id": "059",
+  "prompt_type": "zero_shot",
+  "model_name": "llama-3.1-8b-instant",
+  "prompt": "You are solving a string transformation puzzle.\n\nProblem:\nInitial String: \"#.##.#..\"\nTransformation Rules:\n  0: \".#\" -> \"#.\"\n  1: \"####....\" -> \"\"\n\nRules:\n- Apply ONE rule at a time\n- Each rule replaces the FIRST occurrence of its source pattern\n- Rules are applied by index (0-indexed)\n- The goal is to reduce the string to empty \"\"\n\nOutput EXACTLY one JSON object with the solution:\n{\"problem_id\": \"059\", \"solution\": [0, 1, 2]}\n\nYour solution:",
+  "response": "```python\ndef string_transformation(initial_string):\n    \"\"\"\n    This function applies a series of string transformation rules to an initial string.\n    \n    Parameters:\n    initial_string (str): The initial string to be transformed.\n    \n    Returns:\n    dict: A dictionary containing the problem ID and the solution (a list of rule indices).\n    \"\"\"\n\n    # Define the transformation rules\n    rules = {\n        \"0\": \".#\" -> \"#.\",\n        \"1\": \"####....\" -> \"\",\n        \"2\": # Add more rules as needed\n    }\n\n    # Initialize the current string and the solution list\n    current_string = initial_string\n    solution = []\n\n    # Loop until the string is reduced to empty \"\"\n    while current_string != \"\":\n        # Initialize a flag to indicate if any rule was applied\n        rule_applied = False\n        \n        # Iterate over the rules\n        for rule_idx, (source, _) in rules.items():\n            # Check if the source pattern exists in the current string\n            if source in current_string:\n                # Apply the rule by finding the index of the source pattern\n                idx = current_string.find(source)\n                \n                # Replace the source pattern with the target pattern\n                current_string = current_string[:idx] + rules[rule_idx][1] + current_string[idx + len(source):]\n                \n                # Add the rule index to the solution list\n                solution.append(int(rule_idx))\n                \n                # Set the flag to indicate that a rule was applied\n                rule_applied = True\n        \n        # If no rule was applied, break the loop\n        if not rule_applied:\n            break\n    \n    # Return the solution as a JSON object\n    return {\"problem_id\": \"059\", \"solution\": solution}\n\n# Test the function\nprint(string_transformation(\"#.##.#..\"))\n```\n\nThis code defines a function `string_transformation` that applies the given rules to the initial string. It loops until the string is reduced to empty \"\", applying the rules one by one. The function returns a dictionary containing the problem ID and the solution (a list of rule indices). The test case `print(string_transformation(\"#.##.#..\"))` demonstrates how to use the function.",
+  "parsed_solution": [
+    1
+  ],
+  "is_correct": false,
+  "error_type": "invalid_solution",
+  "final_string": "#.##.#..",
+  "timestamp": "2025-12-15 02:09:40",
+  "response_time": 3.1732819080352783
+}

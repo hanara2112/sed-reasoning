@@ -1,0 +1,14 @@
+{
+  "problem_id": "075",
+  "initial_string": "QQIFIZJXKZD",
+  "transitions": [
+    {
+      "src": "QQIFI",
+      "tgt": ""
+    },
+    {
+      "src": "ZJXKZD",
+      "tgt": ""
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "problem_id": "017",
+  "initial_string": "CDDCBDAAADAAABCDBDAD",
+  "transitions": [
+    {
+      "src": "ADA",
+      "tgt": ""
+    },
+    {
+      "src": "DAA",
+      "tgt": ""
+    },
+    {
+      "src": "ACA",
+      "tgt": ""
+    },
+    {
+      "src": "DAD",
+      "tgt": ""
+    },
+    {
+      "src": "AAB",
+      "tgt": ""
+    },
+    {
+      "src": "AAC",
+      "tgt": ""
+    },
+    {
+      "src": "CDB",
+      "tgt": ""
+    },
+    {
+      "src": "CDD",
+      "tgt": ""
+    },
+    {
+      "src": "CB",
+      "tgt": ""
+    }
+  ]
+}

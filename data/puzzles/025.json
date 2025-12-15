@@ -1,0 +1,42 @@
+{
+  "problem_id": "025",
+  "initial_string": "DDCDCDBBECACABDBDDBCAAB",
+  "transitions": [
+    {
+      "src": "DCE",
+      "tgt": ""
+    },
+    {
+      "src": "ACD",
+      "tgt": ""
+    },
+    {
+      "src": "DDC",
+      "tgt": ""
+    },
+    {
+      "src": "BBEC",
+      "tgt": ""
+    },
+    {
+      "src": "DDB",
+      "tgt": ""
+    },
+    {
+      "src": "DCD",
+      "tgt": ""
+    },
+    {
+      "src": "CAAB",
+      "tgt": ""
+    },
+    {
+      "src": "ACAB",
+      "tgt": ""
+    },
+    {
+      "src": "DB",
+      "tgt": ""
+    }
+  ]
+}

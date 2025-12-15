@@ -1,0 +1,18 @@
+{
+  "total_evaluations": 480,
+  "models_evaluated": [
+    "llama-3.3-70b",
+    "llama-4-scout",
+    "llama-3.1-8b"
+  ],
+  "prompt_types": [
+    "zero_shot",
+    "few_shot",
+    "cot",
+    "self_verify",
+    "role_classify"
+  ],
+  "overall_accuracy": 0.2604166666666667,
+  "bootstrap_ci_width_avg": 27.916666666666668,
+  "roc_auc_predictive_model": 0.6695661971830986
+}

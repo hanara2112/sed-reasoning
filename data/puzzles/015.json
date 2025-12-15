@@ -1,0 +1,42 @@
+{
+  "problem_id": "015",
+  "initial_string": "DCCABAEDCAEDABEBEDAADA",
+  "transitions": [
+    {
+      "src": "BBD",
+      "tgt": ""
+    },
+    {
+      "src": "AEDC",
+      "tgt": ""
+    },
+    {
+      "src": "BED",
+      "tgt": ""
+    },
+    {
+      "src": "AED",
+      "tgt": ""
+    },
+    {
+      "src": "CAB",
+      "tgt": ""
+    },
+    {
+      "src": "DC",
+      "tgt": ""
+    },
+    {
+      "src": "ABE",
+      "tgt": ""
+    },
+    {
+      "src": "CDD",
+      "tgt": ""
+    },
+    {
+      "src": "AADA",
+      "tgt": ""
+    }
+  ]
+}

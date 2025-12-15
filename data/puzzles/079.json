@@ -1,0 +1,14 @@
+{
+  "problem_id": "079",
+  "initial_string": "GYEYIKDAPX",
+  "transitions": [
+    {
+      "src": "GYEYI",
+      "tgt": ""
+    },
+    {
+      "src": "KDAPX",
+      "tgt": ""
+    }
+  ]
+}

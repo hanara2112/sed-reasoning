@@ -1,0 +1,14 @@
+{
+  "problem_id": "077",
+  "initial_string": "XXLRBSR",
+  "transitions": [
+    {
+      "src": "XXL",
+      "tgt": ""
+    },
+    {
+      "src": "RBSR",
+      "tgt": ""
+    }
+  ]
+}

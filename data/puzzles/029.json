@@ -1,0 +1,42 @@
+{
+  "problem_id": "029",
+  "initial_string": "DECDCBDABCBABABDEBADBBD",
+  "transitions": [
+    {
+      "src": "ABD",
+      "tgt": ""
+    },
+    {
+      "src": "DCB",
+      "tgt": ""
+    },
+    {
+      "src": "AAC",
+      "tgt": ""
+    },
+    {
+      "src": "DABC",
+      "tgt": ""
+    },
+    {
+      "src": "EBA",
+      "tgt": ""
+    },
+    {
+      "src": "BAB",
+      "tgt": ""
+    },
+    {
+      "src": "BAE",
+      "tgt": ""
+    },
+    {
+      "src": "DEC",
+      "tgt": ""
+    },
+    {
+      "src": "DBBD",
+      "tgt": ""
+    }
+  ]
+}

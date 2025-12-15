@@ -1,0 +1,14 @@
+{
+  "problem_id": "074",
+  "initial_string": "EEZCHDRY",
+  "transitions": [
+    {
+      "src": "EEZ",
+      "tgt": ""
+    },
+    {
+      "src": "CHDRY",
+      "tgt": ""
+    }
+  ]
+}

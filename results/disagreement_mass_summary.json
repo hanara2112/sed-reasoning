@@ -1,0 +1,45 @@
+{
+  "overall_disagreement": {
+    "D_PC": 0.6,
+    "D_VP": 0.0125,
+    "D_VC": 0.45,
+    "total_D": 1.05
+  },
+  "by_difficulty": {
+    "easy": {
+      "D": 0.025,
+      "identifiability": 0.975
+    },
+    "medium": {
+      "D": 0.26666666666666666,
+      "identifiability": 0.7333333333333334
+    },
+    "hard": {
+      "D": 0.8555555555555555,
+      "identifiability": 0.1444444444444445
+    }
+  },
+  "by_model": {
+    "LLaMA 3.1 8B": {
+      "D": 0.34375,
+      "accuracy": 0.425,
+      "identifiability": 0.65625
+    },
+    "LLaMA 3.3 70B": {
+      "D": 0.425,
+      "accuracy": 0.58125,
+      "identifiability": 0.575
+    },
+    "LLaMA 4 Scout": {
+      "D": 0.5125,
+      "accuracy": 0.51875,
+      "identifiability": 0.48750000000000004
+    }
+  },
+  "fixes_comparison": {
+    "original": 0.6,
+    "invariance": 0.0,
+    "dominance": 0.15625,
+    "penalty": 0.0
+  }
+}
