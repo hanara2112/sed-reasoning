@@ -1,0 +1,14 @@
+{
+  "syntax_semantics_gap": 0.4194915254237288,
+  "validity_correctness_corr": 0.11114596960047082,
+  "length_bias": false,
+  "validity_failure_rate": 0.36548223350253806,
+  "progress_failure_rate": 0.24458204334365324,
+  "D_total": 0.42708333333333337,
+  "D_by_difficulty": {
+    "easy": 0.025,
+    "medium": 0.26666666666666666,
+    "hard": 0.8555555555555555
+  },
+  "gaming_rate": 0.0
+}
