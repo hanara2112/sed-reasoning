@@ -1,6 +1,11 @@
 """
 Puzzle generation strategies for SED puzzles.
-All generators use backward construction to guarantee solvability.
+
+Two paradigms:
+- Constructive: backward_*, concat_*, palin_*, multiphase, expansion
+  → Solution computed directly, solvability guaranteed
+- Forward + BFS: sort_*
+  → Solution found via BFS, may timeout
 """
 
 import random

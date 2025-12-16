@@ -22,7 +22,11 @@ $$s_0 \xrightarrow{t_{i_1}} s_1 \xrightarrow{t_{i_2}} \cdots \xrightarrow{t_{i_k
 
 ## 2. Generation Methodology
 
-### 2.1 Core Principle: Backward Construction
+### 2.1 Two Construction Paradigms
+
+The dataset uses two distinct approaches to guarantee puzzle solvability:
+
+#### Paradigm A: Constructive (Solution-First)
 
 > **Key Insight**: Generate puzzles from solutions, not solutions from puzzles.
 
@@ -32,30 +36,43 @@ By constructing strings iteratively from $\varepsilon$ (adding segments), the re
 
 **Proof**: By induction. Each removal step undoes the corresponding construction step.
 
+**Applies to**: `backward_*`, `concat_*`, `palin_*`, `multiphase`, `expansion`
+
+#### Paradigm B: Forward + BFS Verification
+
+Some puzzles are generated forward (random initial state + fixed rules) and solved via BFS. Solvability is **not guaranteed** — unsolvable or timeout cases are discarded.
+
+**Applies to**: `sort_*` only
+
 ### 2.2 Two-Phase Pipeline
 
 ```
 Phase 1: Pool Generation (250+ candidates)
-    → Generator selection (weighted by difficulty)
-    → BFS solving (for non-constructive generators)
-    → Validation & duplicate detection
-    → Difficulty analysis
+    ├── Generator selection (weighted by difficulty)
+    ├── Solution computation:
+    │   ├── Constructive → solution returned directly
+    │   └── Forward → BFS solver (30s timeout)
+    ├── Validation & duplicate detection
+    └── Difficulty analysis
 
 Phase 2: Representative Selection (100 final)
-    → Stratified sampling by difficulty
-    → Generator diversity balancing
-    → Quality-based ranking
+    ├── Stratified sampling by difficulty
+    ├── Generator diversity balancing
+    └── Quality-based ranking
 ```
 
 ### 2.3 Generator Types
 
-| Generator | Reasoning Type | Approach | Success Rate |
-|-----------|---------------|----------|--------------|
-| `backward_3/5/7` | Sequential | Constructive | 74–97% |
-| `concat_2` | Pattern matching | Constructive | 100% |
-| `sort_3/4` | Algorithmic | BFS-solved | 12–27% |
-| `palin_3` | Symmetry recognition | Constructive | 3–6% |
-| `multiphase` | Multi-phase planning | BFS-solved | 2.5% |
+| Generator | Reasoning Type | Paradigm | Success Rate | Rate Bottleneck |
+|-----------|---------------|----------|--------------|-----------------|
+| `backward_3/5/7` | Sequential | Constructive | 74–97% | Duplicate detection |
+| `concat_2` | Pattern matching | Constructive | 100% | — |
+| `sort_3/4` | Algorithmic | **BFS-solved** | 12–27% | BFS timeout |
+| `palin_3` | Symmetry recognition | Constructive | 3–6% | Duplicate detection |
+| `multiphase` | Multi-phase planning | Constructive | 2.5% | Quality filtering |
+| `expansion` | Non-monotonic | Constructive | 0% | Broken generator |
+
+**Note on Success Rates**: Low rates for constructive generators (`palin_3`, `multiphase`) reflect **quality filtering** (duplicate puzzles, trivial solutions), not solvability failures. Only `sort_*` has low rates due to BFS timeouts.
 
 ---
 

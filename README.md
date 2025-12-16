@@ -102,12 +102,10 @@ jupyter notebook notebooks/
 
 ## Reports
 
-| Report                           | Description                    |
-| -------------------------------- | ------------------------------ |
-| `report/SED Puzzle Dataset.md` | Dataset generation methodology |
-| `report/LLM Evaluation.md`     | Evaluation results summary     |
-| `report/Evaluation Metrics.md` | Mathematical framework         |
-| `report/Human vs Machine.md`   | Cognitive asymmetry analysis   |
+* **SED Puzzle Dataset** : Describes how the string-edit puzzles are generated, structured, and verified.
+* **LLM Evaluation** : Summarizes the evaluation setup, models, prompting strategies, and overall performance results.
+* **Evaluation Metrics** : Defines the metrics used to assess reasoning quality, including correctness, progress, and validity.
+* **Human vs Machine** : Analyzes differences between human and LLM performance, highlighting cognitive asymmetries across puzzle types.
 
 ## References
 
