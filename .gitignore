@@ -5,3 +5,18 @@ api_keys.env
 .env.*
 
 /sed-reasoning/api_keys.env
+/sed-reasoning/extra/
+
+# Results - raw model outputs (regenerable)
+results/llama-*.json
+results/comparison_*.txt
+results/cot/
+results/few_shot/
+results/zero_shot/
+results/role_classify/
+results/self_verify/
+
+# Large/redundant figures
+results/metrics_relationships.png
+results/disagreement_regions.png
+results/metric_distributions_minimal.png
