@@ -4,8 +4,8 @@ api_keys.env
 .env
 .env.*
 
-/sed-reasoning/api_keys.env
-/sed-reasoning/extra/
+api_keys.env
+extra/
 
 # Results - raw model outputs (regenerable)
 results/llama-*.json
