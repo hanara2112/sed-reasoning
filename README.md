@@ -106,6 +106,7 @@ jupyter notebook notebooks/
 * **LLM Evaluation** : Summarizes the evaluation setup, models, prompting strategies, and overall performance results.
 * **Evaluation Metrics** : Defines the metrics used to assess reasoning quality, including correctness, progress, and validity.
 * **Human vs Machine** : Analyzes differences between human and LLM performance, highlighting cognitive asymmetries across puzzle types.
+* **When Surface metrices lie**: Demonstrates that common reasoning metrics fail to identify true semantic correctness in LLMs, even in controlled symbolic tasks.
 
 ## References
 

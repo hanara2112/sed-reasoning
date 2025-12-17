@@ -20,6 +20,4 @@ results/self_verify/
 results/*.png
 
 # PDF files
-*.pdf
 AlphaGeometry.pdf
-ppt.pdf
