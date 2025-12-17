@@ -15,9 +15,6 @@ results/few_shot/
 results/zero_shot/
 results/role_classify/
 results/self_verify/
-results/*.png
 
-# Large/redundant figures
-results/metrics_relationships.png
-results/disagreement_regions.png
-results/metric_distributions_minimal.png
+# All PNG figures in results directory
+results/*.png
