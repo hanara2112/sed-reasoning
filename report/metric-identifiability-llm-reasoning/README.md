@@ -1,13 +1,6 @@
 # Metric Misalignment and Semantic Identifiability in LLM Reasoning
 
-<div align="center">
-
 *Why surface-level metrics fail to capture true reasoning competence*
-
-[![Status](https://img.shields.io/badge/Status-Technical%20Note-blue.svg)]()
-[![Domain](https://img.shields.io/badge/Domain-LLM%20Evaluation-green.svg)]()
-
-</div>
 
 ---
 
@@ -40,14 +33,14 @@ The analysis is grounded in:
 
 ## Document Structure
 
-| Section | Topic |
-|---------|-------|
-| [01. Introduction](docs/01-introduction.md) | Motivation and core scientific question |
-| [02. Syntax vs Semantics](docs/02-syntax-vs-semantics.md) | The fundamental distinction metrics miss |
-| [03. SED Formalization](docs/03-sed-formalization.md) | Mathematical framework for reasoning tasks |
-| [04. Metric Misalignment](docs/04-metric-misalignment.md) | Three pathologies in evaluation design |
-| [05. Identifiability](docs/05-identifiability.md) | When competence cannot be observed |
-| [06. Discussion](docs/06-discussion.md) | Implications and future directions |
+| Section                                                | Topic                                      |
+| ------------------------------------------------------ | ------------------------------------------ |
+| [01. Introduction](docs/01-introduction.md)               | Motivation and core scientific question    |
+| [02. Syntax vs Semantics](docs/02-syntax-vs-semantics.md) | The fundamental distinction metrics miss   |
+| [03. SED Formalization](docs/03-sed-formalization.md)     | Mathematical framework for reasoning tasks |
+| [04. Metric Misalignment](docs/04-metric-misalignment.md) | Three pathologies in evaluation design     |
+| [05. Identifiability](docs/05-identifiability.md)         | When competence cannot be observed         |
+| [06. Discussion](docs/06-discussion.md)                   | Implications and future directions         |
 
 ---
 
@@ -55,18 +48,20 @@ The analysis is grounded in:
 
 ### Diagnostic Table
 
-| Observed Behavior | Technical Term |
-|-------------------|----------------|
-| Rewards longer outputs | Length / Verbosity Bias |
-| Rewards valid-looking steps | Surface-Form Bias |
-| Rewards local progress | Myopic Proxy Failure |
-| **All combined** | **Non-Identifiability** |
+| Observed Behavior           | Technical Term                |
+| --------------------------- | ----------------------------- |
+| Rewards longer outputs      | Length / Verbosity Bias       |
+| Rewards valid-looking steps | Surface-Form Bias             |
+| Rewards local progress      | Myopic Proxy Failure          |
+| **All combined**      | **Non-Identifiability** |
 
 ### Central Equation
 
 The final state after executing a model's action sequence:
 
-$$s_n = T(a_n \circ a_{n-1} \circ \dots \circ a_1)(s_0)$$
+$$
+s_n = T(a_n \circ a_{n-1} \circ \dots \circ a_1)(s_0)
+$$
 
 **Syntactic validity** ($a_i \in \mathcal{A}(s_{i-1})$) does **not** guarantee **semantic correctness** ($s_n \in G$).
 
@@ -85,10 +80,10 @@ $$s_n = T(a_n \circ a_{n-1} \circ \dots \circ a_1)(s_0)$$
 If referencing these notes:
 
 ```bibtex
-@misc{metric-identifiability-2024,
+@misc{metric-identifiability-2025,
   title={Metric Misalignment and Semantic Identifiability in LLM Reasoning},
   author={[Author]},
-  year={2024},
+  year={2025},
   note={Technical notes on LLM evaluation failure modes}
 }
 ```
@@ -107,4 +102,3 @@ If referencing these notes:
 <div align="center">
 <i>Written as a technical note for coursework and research discussion.</i>
 </div>
-
