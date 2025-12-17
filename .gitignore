@@ -18,3 +18,5 @@ results/self_verify/
 
 # All PNG figures in results directory
 results/*.png
+
+/sed-reasoning/AlphaGeometry.pdf
