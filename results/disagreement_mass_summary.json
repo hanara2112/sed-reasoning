@@ -1,43 +1,56 @@
 {
   "overall_disagreement": {
-    "D_PC": 0.6,
-    "D_VP": 0.0125,
-    "D_VC": 0.45,
-    "total_D": 1.05
+    "D_PC": 0.24166666666666667,
+    "D_VP": 0.016666666666666666,
+    "D_VC": 0.18541666666666667,
+    "D_corr": 0.27708333333333335,
+    "D_any": 0.27708333333333335
   },
   "by_difficulty": {
     "easy": {
-      "D": 0.025,
-      "identifiability": 0.975
+      "D_corr": 0.025,
+      "D_any": 0.025,
+      "identifiability_corr": 0.975,
+      "identifiability_any": 0.975
     },
     "medium": {
-      "D": 0.26666666666666666,
-      "identifiability": 0.7333333333333334
+      "D_corr": 0.16666666666666666,
+      "D_any": 0.16666666666666666,
+      "identifiability_corr": 0.8333333333333334,
+      "identifiability_any": 0.8333333333333334
     },
     "hard": {
-      "D": 0.8555555555555555,
-      "identifiability": 0.1444444444444445
+      "D_corr": 0.5555555555555556,
+      "D_any": 0.5555555555555556,
+      "identifiability_corr": 0.4444444444444444,
+      "identifiability_any": 0.4444444444444444
     }
   },
   "by_model": {
     "LLaMA 3.1 8B": {
-      "D": 0.34375,
+      "D_corr": 0.2875,
+      "D_any": 0.2875,
       "accuracy": 0.425,
-      "identifiability": 0.65625
+      "identifiability_corr": 0.7125,
+      "identifiability_any": 0.7125
     },
     "LLaMA 3.3 70B": {
-      "D": 0.425,
+      "D_corr": 0.25,
+      "D_any": 0.25,
       "accuracy": 0.58125,
-      "identifiability": 0.575
+      "identifiability_corr": 0.75,
+      "identifiability_any": 0.75
     },
     "LLaMA 4 Scout": {
-      "D": 0.5125,
+      "D_corr": 0.29375,
+      "D_any": 0.29375,
       "accuracy": 0.51875,
-      "identifiability": 0.48750000000000004
+      "identifiability_corr": 0.70625,
+      "identifiability_any": 0.70625
     }
   },
   "fixes_comparison": {
-    "original": 0.6,
+    "original": 0.27708333333333335,
     "invariance": 0.0,
     "dominance": 0.15625,
     "penalty": 0.0

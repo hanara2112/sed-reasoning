@@ -112,3 +112,4 @@ jupyter notebook notebooks/
 1. Trinh, T.H., Wu, Y., Le, Q.V., He, H., & Luong, T. (2024). **Solving olympiad geometry without human demonstrations**. *Nature*, 625, 476–482. https://doi.org/10.1038/s41586-023-06747-5
 2. Wei, J., Wang, X., Schuurmans, D., et al. (2022). **Chain-of-Thought Prompting Elicits Reasoning in Large Language Models**. *NeurIPS 2022*. https://arxiv.org/abs/2201.11903
 3. Brown, T.B., Mann, B., Ryder, N., et al. (2020). **Language Models are Few-Shot Learners**. *NeurIPS 2020*. https://arxiv.org/abs/2005.14165
+4. Xia, W., Qin, L., & Radev, D. (2024). **Evaluating Mathematical Reasoning Beyond Accuracy: Validity and Redundancy in Step-by-Step Traces**. *arXiv preprint*. https://arxiv.org/html/2404.05692v1
