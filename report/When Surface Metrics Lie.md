@@ -1,5 +1,8 @@
 # Identifiability Failures in LLM Reasoning Evaluation
 
+> *"When a measure becomes a target, it ceases to be a good measure."*
+> — **Charles Goodhart (1975)**
+
 ## Abstract
 
 Large Language Models are increasingly evaluated on multi-step reasoning tasks using surface-level metrics—step validity, progress, and length—treated as proxies for semantic correctness. We demonstrate that even in highly controlled symbolic reasoning domains, these metrics fail to identify true problem-solving competence. Using String Edit Distance (SED) puzzles as a minimal testbed, we formalize reasoning evaluation as a statistical identifiability problem and quantify  *disagreement mass* : the probability that observable metrics indicate success while the solution remains semantically incorrect. Our empirical analysis reveals substantial disagreement mass across difficulty levels, monotonically increasing with task complexity. These findings challenge the validity of metric-based reasoning benchmarks and motivate a principled rethinking of evaluation methodology.
